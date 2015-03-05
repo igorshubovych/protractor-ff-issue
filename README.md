@@ -28,6 +28,8 @@ npm run test-ff # run protractor tests in Firefox
 Explanation
 -----------
 
+Here is the main extracts from code:
+
 app/stylesheets/app.css
 ```css
 .my-sick-button {
@@ -47,3 +49,5 @@ function () {
   element(by.buttonText('BUTTON 1')).click(); // fails in Firefox
 }
 ```
+
+When the text is transformed via CSS property text-transform to uppercase, Chrome can find the element only by capitalized text (same as user see it). In the same case, Firefox can find the element by original text (same as written in HTML).
