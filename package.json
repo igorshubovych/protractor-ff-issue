@@ -1,0 +1,15 @@
+{
+  "name": "protractor-demo",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "http-server app",
+    "wd": "webdriver-manager start",
+    "test": "protractor test/protractor.conf.js",
+    "test-ff": "protractor test/protractor.conf.js --browser=firefox"
+  },
+  "devDependencies": {
+    "http-server": "0.7.5",
+    "minimist": "1.1.0",
+    "protractor": "1.8.0"
+  }
+}
